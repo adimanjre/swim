@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+        
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #main-bg {
+            background-image: url(../img/swimming-bg.png);
+            background-repeat: no-repeat;
+            
+            
+        }
+       
+
+        .navitem {
+            list-style: none;
+            overflow: hidden;
+            text-decoration: none;
+
+        }
+
+        .navlogo {
+            display: inline-block;
+            list-style: none;
+            padding: 1.5rem;
+
+        }
+        
+        .nav-logo li:not(:first-child){
+            text-align: center;
+        }
+        .navitem a:not(:first-child) {
+            
+            color: black;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            float: right;
+            
+            }
+        .navitem .icon{
+            display: none;
+        }
+
+        .navitem a:not(:first-child):hover,
+        .navitem a:active {
+            background: linear-gradient(to top, #155ed1, #ba5cff);
+            color: white;
+
+        }
+        .boxes{
+            top: 70%;
+        }
+        .card-1, .card-2 , .card-3 , .card-4{
+            min-height: 330px;
+        }
+        .card-title {
+            padding-left: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-text {
+            padding-left: 1.5rem;
+            padding-bottom: 0.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .card-1 {
+            background: linear-gradient(to top, #b61fe0, #ff14e7);
+            border: none;
+            color: white;
+        }
+
+        .card-2 {
+            background: linear-gradient(to top, #ff1c98, #ff3050);
+            border: none;
+            color: white;
+        }
+
+        .card-3 {
+            background: linear-gradient(to top, #155ed1, #ba5cff);
+            border: none;
+            color: white;
+        }
+
+        .card-4 {
+            background: linear-gradient(to top, #ff8615, #ffaf00);
+            border: none;
+            color: white;
+        }
+
+        .card {
+            cursor: pointer;
+            transition: 100ms ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-0.6rem);
+
+        }
+
+        .why-sec{
+            color: white;
+            background: linear-gradient(to top, rgba(246,5,142,0.9),rgba(255,54,81,0.9));
+            
+        }
+        .rewcol:hover{
+            background-color: #d8d8d8;
+        }
+
+        @media screen and (max-width: 600px) {
+            
+            .navitem a:not(:last-child){
+                display: none;
+            } 
+            .navitem a:first-child{
+                display: block;
+            }
+            .navitem .icon{
+                display: inline-block;
+                 
+            }
+            .card-title {
+            padding-left: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-text {
+            padding-left: 1rem;
+            padding-bottom: 0.5rem;
+            padding-right: 1rem;
+        }
+        }
+        @media screen and (max-width: 600px) {
+          .navitem.responsive a:not(:last-child){
+             display: block;
+             float:none;
+             list-style: none;
+             text-align: center;
+            
+          }
+          .navitem .icon{
+              position: absolute;
+              top: 0;
+              right: 0;
+              float:right;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navlink container-fluid">
+        <div class="navitem" id="myTopnav">
+            <a href="#home" class="navlogo" ><img src="img/logo.png" height="25px" alt=""></a>
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </div>
+    <div class="container-fluid pt-5   " id="main-bg">
+        <div class="container pt-5  mt-md-5 boxes mb-5">
+            <div class="row  pt-md-5 pb-md-5 mt-md-5">
+                <div class="col-12 col-lg-3 col-md-6 mt-md-5 pt-md-5 ">
+                    <div class="card card-1 mt-md-5">
+                        <h3 class="card-title">Register<br> for swim <br>lessons
+                        </h3>
+                        <P class="card-text">Use our Level Finder to determine your swimmer's level or call us for any
+                            assistance you need!
+                        </P>
+                        <button class="btn btn-light w-50 text-center m-auto mb-3">Know More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mt-md-5 pt-md-5">
+                    <div class="card card-2 mt-5">
+                        <h3 class="card-title">Franchise<br> Opportu-<br>nities
+                        </h3>
+                        <P class="card-text">Use our Level Finder to determine your swimmer's level or call us for any
+                            assistance you need!
+                        </P>
+                        <button class="btn btn-light w-50 text-center m-auto mb-3">Know More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mt-md-5 pt-md-5">
+                    <div class="card card-3 mt-5">
+                        <h3 class="card-title">What Level<br>Is My <br>Child?
+                        </h3>
+                        <P class="card-text">Our experienced instructors offer a variety of swimming lessons for
+                            children and teens.</P>
+                        <button class="btn btn-light w-50 text-center m-auto mb-3">Know More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mt-md-5 pt-md-5">
+                    <div class="card card-4 mt-5">
+                        <h3 class="card-title">Locate <br>a Swim <br>School </h3>
+                        <p class="card-text">Swimming School Franchise is positioned as the leader in the thriving
+                            children’s education.</p>
+                        <button class="btn btn-light w-50 text-center m-auto mb-3">Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="d-flex flex-md-row flex-column ">
+            <div class="p-md-5 p-3">
+                <h2>Welcome to our school!</h2>
+                <p>Swimming School is proud to provide state-of-the-art
+                    aquatic facilities that are dedicated to indoor
+                    swim classes and programs for children.</p>
+                <button class="btn p-md-3 p-1 btn-success">Read More</button>
+            </div>
+            <div><img class="img1 img-fluid" height="400px" src="img/swimming 2.png"></div>
+        </div>
+        <div class="d-flex mt-md-5 mt-3 flex-md-row flex-column-reverse">
+            <div><img class="img1 img-fluid" height="400px" src="img/swimming 3.png"></div>
+            <div class="p-md-5 p-3">
+                <h2>Swim lessons for 
+                    Children and teens</h2>
+                <p>We offer a variety of private and group lessons for children and teens. The lessons and swimming courses include everything your kid needs to swim confidently.</p>
+                <button class="btn p-md-3 p-1 btn-success">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" style="background-image: url(../img/swimming-4.png);">
+        <div class="container">
+         <div class="row">
+             <div class="col-lg-5 col-md-7 why-sec p-md-5 p-3">
+                 <h2 class="pb-md-3 p-2 p-md-0">Why Our Swimming 
+                    School is Rated #1 in
+                    The Region
+                    </h2>
+                <p>We offer a variety of private and group lessons for children and teens. The lessons and swimming courses include everything your kid needs to swim confidently. <br><br>Swimming School is proud to provide swim classes and programs for children.</p>
+                <button class="btn p-3 btn-light mt-3">Know more</button>
+             </div>
+         </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row " >
+            <div class="col-12 col-md-6 col-lg-3 rewcol text-center">
+                <div ><img src="img/Ellipse1.png" class="p-md-4 p-3 text-center img-fluid" alt=""></div>
+                <p class="p-3">Thank you for making me a confident swimmer! I hope to learn more from the school’s instructors during future lessons.</p>
+                <h5 class="p-3">Anne, 25 y.o.</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 rewcol text-center">
+                <img src="img/Ellipse2.png" class="p-4 text-center" alt="">
+                <p class="p-3">Thank you for making me a confident swimmer! I hope to learn more from the school’s instructors during future lessons.</p>
+                <h5 class="p-3">Sam, 23 y.o.</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 rewcol text-center">
+                <img src="img/Ellipse3.png" class="p-4 text-center" alt="">
+                <p class="p-3">Thank you for making me a confident swimmer! I hope to learn more from the school’s instructors during future lessons.</p>
+                <h5 class="p-3">Sam, 23 y.o.</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 rewcol text-center">
+                <img src="img/Ellipse4.png" class="p-4 text-center" alt="">
+                <p class="p-3">Thank you for making me a confident swimmer! I hope to learn more from the school’s instructors during future lessons.</p>
+                <h5 class="p-3">Sam, 23 y.o.</h5>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 p-5" style="background-color: #0095de;">
+                <h2 class="pt-3">Contacts</h2>
+                <p>Address: 4578 Marmora Road,<br>
+                    Glasgow D04 89GR</p>
+                <h3><i class="fas fa-mobile-alt"></i>1-800-2345-6789</h3>
+                <p>Email: youremail.com</p>
+                <h4></h4>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/map.png" class="img-fluid" height="400px" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 text-center justify-content-center mb-3 bg-secondary">
+            Swimming ©  2020. All Rights Reserved.  Privacy Policy.
+        </div>
+    </div>
+
+    <script>
+       
+
+        function myFunction(){
+            console.log("click")
+            var nav = document.getElementById("myTopnav");
+            if(nav.className === "navitem"){
+                nav.className+=" responsive";
+            } else{
+                nav.className="navitem"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
